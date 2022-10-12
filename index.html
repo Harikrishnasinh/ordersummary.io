@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100;0,9..144,200;0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,800;0,9..144,900;1,9..144,100;1,9..144,200;1,9..144,300;1,9..144,400;1,9..144,500;1,9..144,600;1,9..144,700;1,9..144,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <title>Frontend Mentor | Order summary card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    /* .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    } */
+
+    body {
+      background: url(./images/pattern-background-desktop.svg);
+      background-color: hsl(225, 100%, 94%);
+      /* background-repeat: no-repeat; */
+      /* background-size: cover; */
+      background-repeat: repeat-x;
+    }
+
+    .card {
+      /* border: 1px solid black; */
+      box-shadow: 4px 9px 25px 12px rgba(0, 0, 0, 0.2);
+      width: auto;
+      border-radius: 20px;
+      display: inline-block;
+      background-color: hsl(225, 100%, 98%);
+    }
+
+    .maincard {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      border-radius: 20px;
+      font-family: 'Red Hat Display', sans-serif;
+    }
+
+    .imagemusic img {
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+    }
+
+    .annualplan {
+      background-color: rgba(0, 0, 0, 0.1);
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      margin: 2rem;
+      padding: 0.3rem;
+      border-radius: 20px;
+    }
+
+    .proceedbutton {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+
+    .proceedbutton button {
+      background-color: hsl(245, 75%, 52%);
+      color: hsl(225, 100%, 98%);
+      width: 100%;
+      padding: 1rem;
+      border-radius: 20px;
+      letter-spacing: 2px;
+      font-weight: 500;
+      font-size: 15px;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 6px 12px -2px, rgba(0, 0, 0, 0.1) 0px 3px 7px -3px;
+      /* box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px; */
+      border: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="maincard">
+      <div class="card">
+        <div class="imagemusic">
+          <img src="./images/illustration-hero.svg" alt="">
+        </div>
+        <div class="ordersummary">
+          <h2 style="font-weight: 900; text-align: center;">Order Summary</h2>
+        </div>
+        <div class="ordersummaryp">
+          <p
+            style="font-weight: 500; color:  hsl(224, 23%, 55%); font-size: 16px; text-align: center; letter-spacing: 1.6px;">
+            You can now
+            listen to millions of
+            songs, <br>
+            audiobooks, and podcasts on any
+            device <br> anywhere you like!</p>
+        </div>
+        <div class="annualplan">
+          <img src="./images/icon-music.svg" alt="">
+          <p style="display: flex; align-items:center;justify-content:flex-start;">
+            Annual Plan <br>
+            $59.99/year
+          </p>
+          <a href="#">
+            Change
+          </a>
+        </div>
+        <div class="proceedbutton">
+          <button>
+            Proceed to Payment
+          </button>
+        </div>
+        <div class="cancelorder">
+          <p style="text-align: center; color:rgba(0, 0, 0, 0.7); font-weight: 700;">
+            Cancel Order
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+
+</html>
